@@ -65,6 +65,26 @@ paths:
           required: true
           schema:
             type: integer
+  /gallery/:
+    get:
+      tags:
+        - gallery
+      description: Массив id картинок с галлереи
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    imageid:
+                      type: integer
+                      format: int64
+                      description: Image id
+                      example: 11
   /slider/imagepart:
     get:
       tags:
