@@ -24,7 +24,7 @@ paths:
                 type: object
                 properties:
                   imageid:
-                    type: integer
+                    type: string
                     format: int64
                     description: Image id
                     example: 11
@@ -64,7 +64,7 @@ paths:
           description: id изображения
           required: true
           schema:
-            type: integer
+            type: string
   /gallery/:
     get:
       tags:
